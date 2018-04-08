@@ -1,86 +1,157 @@
+* {
+    box-sizing:border-box;
+}
 body {
-    margin:0;
-    font-family:'Lato',sans-serif;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 #menu {
     background-color: white;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:100;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
-#menu ul{
+#menu ul {
     text-align: right;
+    list-style: none;
+
 }
 
-.menu-item {
+.menu-item,
+a {
     color: lime;
-    font-size:18px;
+    font-size: 18px;
     display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: all 0.4s;
 
-    margin:0 20px;
-   
 }
+
 header {
-    height:100vh;
+    height: 100vh;
     background-image: url('../img/header-background.jpg');
     background-position: center;
     background-size: cover;
-/*    background-attachment: fixed;*/
+    /*    background-attachment: fixed;*/
     position: relative;
 }
-.header-text  {
 
-   position:absolute;
+.header-text {
+
+    position: absolute;
     text-align: center;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     color: white;
-    width:100%;
- 
+    width: 100%;
+
 }
-.header-text h1{
+
+.header-text h1 {
     font-weight: 100;
     font-size: 60px;
 }
+
 .header-text h1 span {
-    font-weight:400;
+    font-weight: 400;
 }
+
 .green {
-    color:limegreen;
+    color: limegreen;
 }
+
 .header-text h2 {
-    font-weight:100;
+    font-weight: 100;
     font-size: 30px;
 }
+
 section {
-    background-color:#f9fcfe;
-position:relative;
-    
+    background-color: #f9fcfe;
+    position: relative;
+   
+
+
 }
+
 section h2 {
-    text-align: center; 
-    width:100%;
-   
-}
-figure{
     text-align: center;
-    width:50%;
-    
-   
+    width: 100%;    
+
+
 }
-figure img {
-    width:40%;
-    float:left;
-    
-    
+
+#about figure {
+    text-align: center;
+    width: 50%;
+    float: left;
+    margin: 0;
+
 }
-article {
+
+#about figure img {
+    width: 40%;
+}
+
+#about article {
+    text-align: center;
+    width: 50%;
+    display:inline-block;
+
+}
+.clear{
+    clear:both;
+}
+#skills {
+    background-color:white;
+    position:relative;
     text-align:center;
-    margin:40 20px;
-     
+}
+/*
+section2 h2 {
+    text-align: center;
+    width:100%;
+}
+div {
+    text-align: center;
+}
+*/
+#skills .ikona {
+    width:15%;
+    display:inline-block;
+}
+   figacaption {
+       display:block;
+       margin-top:20px;
     
+}
+
+#portfolio {
+    width:100%;
+    position:relative;
+    text-align:center;
+/*    font-size:0;*/
+}
+
+#pierwszy,
+#drugi,
+#trzeci {
+      display:inline-block;
+    width:33.3333%;
+ height:300px;
+    float:left;
+
+}
+#pierwszy {
+     background-image: url('../img/portfolio1.jpg')
+}   
+#drugi {
+    background-image: url('../img/portfolio2.jpg')
+}
+#trzeci {
+    background-image:url('../img/portfolio4.jpg')
 }
